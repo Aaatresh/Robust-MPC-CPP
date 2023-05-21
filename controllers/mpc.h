@@ -3,8 +3,8 @@
 */
 
 #include "model_defs.h"
-#include "../matrix.h"
-#include "../utils.h"
+#include "../matrix/matrix.h"
+#include "../utils/utils.h"
 
 class controller
 {

@@ -76,7 +76,7 @@
 #ifndef MATRIX_H
 #define MATRIX_H
 
-#include "controllers/model_defs.h"
+#include "../controllers/model_defs.h"
 
 #if (SYSTEM_IMPLEMENTATION == SYSTEM_IMPLEMENTATION_PC)
     #include <iostream>
