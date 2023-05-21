@@ -4,7 +4,7 @@
 
 #include "model_defs.h"
 #include "../matrix/matrix.h"
-#include "../utils/utils.h"
+#include "../../utils/utils.h"
 
 class controller
 {

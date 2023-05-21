@@ -10,11 +10,11 @@
 */
 
 // Include necessary files that implement matrices, system model and the standard MPC controller.
-#include "../controllers/model_defs.h"             // Contains functions associated with configuration
-#include "../matrix/matrix.h"                 // Contains code related to matrix operations
-#include "../matrix/matrix.cpp"
-#include "../controllers/mpc.h"                    // Implements the robust MPC
-#include "../controllers/mpc.cpp"
+#include "../libs/controllers/model_defs.h"             // Contains functions associated with configuration
+#include "../libs/matrix/matrix.h"                 // Contains code related to matrix operations
+#include "../libs/matrix/matrix.cpp"
+#include "../libs/controllers/mpc.h"                    // Implements the robust MPC
+#include "../libs/controllers/mpc.cpp"
 #include <fstream>
 #include <random>
 #include "../servo_config.h"           // Contains functions that implement the linear and non-linear system servo-mechanism models
