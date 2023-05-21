@@ -18,7 +18,7 @@
 #include "../libs/controllers/robust_mpc.cpp"
 #include <fstream>
 #include <random>
-#include "../servo_config.h"           // Contains functions that implement the linear and non-linear system servo-mechanism models
+#include "../plants/servo_mech_system/servo_config.h"           // Contains functions that implement the linear and non-linear system servo-mechanism models
 
 #define KLD_THRESH 0.1              // KL Divergence threshold (Radius of N-Dim ball around nominal (linear) model)
 
