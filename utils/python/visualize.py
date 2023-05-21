@@ -15,7 +15,7 @@ parser.add_argument("--datafile", default=None, required=True, type=str, help="P
 args = parser.parse_args()
 
 # Load data from data file
-data = np.loadtxt(args.datafile, delimiter=", ", skiprows=1)
+data = np.loadtxt(args.datafile, delimiter=",", skiprows=1)
 
 # Extract time, input and output
 t, u, y = data[:, 0], data[:, 1], data[:, 2]
