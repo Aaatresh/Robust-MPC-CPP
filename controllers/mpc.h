@@ -6,7 +6,16 @@
 #include "../matrix.h"
 #include "../utils.h"
 
-class MPC
+class controller
+{
+    public:
+
+        void init_model();
+
+        void step();
+};
+
+class MPC: public controller
 {
     /*
         This class implements an unconstrained standard MPC
