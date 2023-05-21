@@ -17,7 +17,7 @@ The complex non-linear dynamics and simple linear dynamics of this system can be
 ```
 
 ### Simulating the linear (simple) and non-linear complex dynamics
-Run file ```python/sim_dyn_adv_model.py``` to visualize the simulations of the complex dynamics.
+Run file ```utils/python/sim_dyn_adv_model.py``` to visualize the simulations of the complex dynamics.
 
 ### Running the controllers on the simulated dynamics
 - **Scenario considered: When the approximated linear dynamics (nominal) differs from the actual complex dynamics (More realistic scenario):** Compile and execute files ```main/standard_mpc_simulation.cpp``` and ```main/robust_mpc_simulation.cpp``` to compare the performance of the vanilla unconstrained MPC and the robust unconstrained MPC. Commands:
@@ -25,7 +25,11 @@ Run file ```python/sim_dyn_adv_model.py``` to visualize the simulations of the c
   $ g++ main/<cpp file name> -o controller.out      # Compile cpp file into executable controller.out
   $ ./controller.out                                # Run controller on servo-mechanical system
 ```
-The data log after the simulation can be found in the directory: ```data/```.
+The data log after the simulation can be found in the directory: ```data/```. This data can be visualized using python using the script: ```utils/python/visualize.py``` through
+the following command:
+```
+  $ python3 utils/python/visualize.py --setpoint <setpoint value> --datafile data/data.txt
+```
 
 ## Results
 - Plots of the output and input (above and below, respectively) of the system when the approximated linear dynamics (nominal) differs from the actual complex dynamics:
